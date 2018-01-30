@@ -24,7 +24,7 @@
 
 	-->
 
-	<jaxws:endpoint implementor="ws.UserResourceServiceImpl" address="/UserResourceServiceImplPort">
+	<jaxws:endpoint implementor="main.java.ws.CommentResourceServiceImpl" address="/CommentResourceServiceImplPort">
 	</jaxws:endpoint>
 
 

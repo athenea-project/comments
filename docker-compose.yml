@@ -20,10 +20,10 @@ services:
       restart: always
       image: tomcat
       ports:
-        - "8081:8080"
+        - "8083:8080"
       volumes:
-        - ./target/users_organizations-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/users_organizations-microservice.war
+        - ./target/comments-0.0.1-SNAPSHOT.war:/usr/local/tomcat/webapps/comments-microservice.war
       links:
-        - db:db_org
+        - db:db
       depends_on:
         - "db"

@@ -13,12 +13,12 @@
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <context:annotation-config/>
 
-	<bean id="userDAO" class="service.UserServiceImpl"/>
+	<bean id="commentDAO" class="main.java.service.CommentServiceImpl"/>
 
-    <mybatis:scan base-package="mapper"/>
+    <mybatis:scan base-package="main.java.mapper"/>
 
 
-    <bean id="userResourceService" class="ws.UserResourceServiceImpl">
+    <bean id="commentResourceService" class="main.java.ws.CommentResourceServiceImpl">
         <!--
 		<property name="userDAO" ref="userDAO"/>
 		-->
